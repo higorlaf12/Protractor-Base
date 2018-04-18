@@ -22,9 +22,6 @@
 * protractor protractor.conf.js
 
 ```
-# Observação esse programa não ira rodar, pois não possue nenhum programa nele. 
-	Irei colocar algum exemplo mais tarde. Vou explicar a estrutura.
-
 #Webapp
 	Dentro de webApp ficara nossos teste.
 	Dentro do webApp temos as seguintes pastas.
@@ -36,5 +33,5 @@
 		- aqui fica os dados como os elementos das páginas e a alguns programas como geradores aleatorios etc..
 	-> Aqui pode ficar alguns arquivos .js que são usados frequentimente ou de facio acesso para verificar como login. 
 #spec
-	Não me lembro muito bem o proposito dela. Tem um explo lá mas não ira rodar pois não está configurado no protractor.conf.js
+     Tem um exemplo lá mas não ira rodar, pois não está configurado no protractor.conf.js
 ```
