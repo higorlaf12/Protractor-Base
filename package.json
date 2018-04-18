@@ -1,0 +1,47 @@
+{
+  "name": "protracto-base",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "grunt-concurrent": "^2.3.1",
+    "jasmine": "^2.8.0",
+    "jasmine-allure-reporter": "^1.0.1",
+    "jasmine-core": "^2.8.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "jasmine2-custom-message": "^0.8.4",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.0.1",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-requirejs": "^1.1.0",
+    "mocha": "^4.0.1",
+    "phantomjs-prebuilt": "^2.1.15",
+    "protractor": "3.0.0",
+    "supertest": "^3.0.0"
+  },
+  "scripts": {
+    "test-protractor": "protractor protractor.conf.js",
+    "runWebDriver": "webdriver-manager start",
+    "test-dev": "karma start",
+    "test": "karma start --sigle -run",
+    "runAllure": "mvn clean site -Dallure.results_pattern=allure-results",
+    "AllureServer": "mvn jetty:run -Djetty.port=1234",
+    "install": "node ./node_modules/protractor/bin/webdriver-manager update"
+  },
+  "dependencies": {
+    "file-saver": "^1.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/higorlaf12/Protractor-Base.git"
+  },
+  "author": "higor.freitas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/higorlaf12/Protractor-Base/issues"
+  },
+  "homepage": "https://github.com/higorlaf12/Protractor-Base#readme"
+}
