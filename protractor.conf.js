@@ -12,11 +12,15 @@ exports.config = {
   ],
 
 
-  capabilities: {
-    'browserName': 'firefox',
-    'chromeOptions': {'args': ['--disable-extensions']}
-  },
-
+      capabilities: {
+        'directConnect': true,
+        'browserName': 'chrome',
+        marionette : true,
+        acceptInsecureCerts : true,
+        chromeOptions: {
+            args: ["--headless", "--disable-gpu", "--window-size=800x600"]
+        }
+    },
     // multiCapabilities: [{
     //     'browserName': 'chrome'
     // }, {
@@ -50,12 +54,13 @@ exports.config = {
         });
         beforeEach(function() {
             originalTimeout = jasmine.DEFAULT_TIMEOUT_INTERVAL;
-            jasmine.DEFAULT_TIMEOUT_INTERVAL = 500000;
+            jasmine.DEFAULT_TIMEOUT_INTERVAL = 700000;
         });
         afterEach(function() {
             jasmine.DEFAULT_TIMEOUT_INTERVAL = originalTimeout;
+            
         });
-        // browser.manage().window().setSize(1600, 1000);
+        browser.manage().timeouts().implicitlyWait(20000);
     },
 
     allScriptsTimeout: 120000,
