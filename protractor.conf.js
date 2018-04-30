@@ -5,10 +5,8 @@ var AllureReporter = require('jasmine-allure-reporter');
 exports.config = {
   // The address of a running selenium server.
   seleniumAddress: 'http://localhost:4444/wd/hub',
- //seleniumServerJar:'/home/higorlucas/.nvm/versions/node/v6.9.5/lib/node_modules/protractor/node_modules/webdriver-manager/selenium-server-standalone-3.7.1.jar',
-
-
-    // Spec patterns are relative to the location of this config.
+ 
+  // Spec patterns are relative to the location of this config.
   specs: [
     'webapp/e2e/spec/*.js'
   ],
